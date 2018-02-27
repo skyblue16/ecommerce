@@ -50,9 +50,7 @@
 							<a class="nav-link" href="#">Lista de regalos</a>
 						</li>
 						<li class="nav-item">
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-										<a id="shoppingCart" class="nav-link" href="#"><i id="shopping" class="fas fa-shopping-bag"></i></a>
-									  </button>
+							<a id="shoppingCart" class="nav-link" href="#"><i id="shopping" class="fas fa-shopping-bag"></i></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Login</a>
@@ -223,12 +221,10 @@
 						<div class="row text-center justify-content-center">
 							<div class="col-sm-12">
 								{{#each this}}
-								<div class="thumb col-2" > 
-								   <!--a href="#" class="comprar"-->
+								<div class="thumb col-2">
 									<img src="{{thumbnail}}" alt="{{id}}">
-									<a href="#" >{{title}}</a>
-									<p >$ {{price}}</p>
-								   <!--/a-->
+									<a href="#">{{title}}</a>
+									<p>$ {{price}}</p>
 								</div>
 								{{/each}}
 							</div>
@@ -243,11 +239,9 @@
 									<img src="{{thumbnail}}" alt="{{id}}">
 									<a href="#">{{title}}</a>
 									<p>$ {{price}}</p>
-
 								</div>
 								{{/each}}
 							</div>
-							
 						</div>
 					</div>
 				</div>
@@ -305,40 +299,18 @@
 				</div>
 			</div>
 		</div>
-		
 	</script>
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			</div>
-			<div class="modal-body">
-			  <div id="container-precio"></div>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			  <button type="button" class="btn btn-primary">Save changes</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
 	<script id="search-template" type="text/x-handlebars-template">
 	
 	</script>
 	<!-- Script -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	 crossorigin="anonymous"></script>
-	 <script src="assets/js/minicart.js"></script>
 	<script src="assets/js/handlebars-v4.0.11.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 	 crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	 crossorigin="anonymous"></script>
 	<script src="assets/js/script.js"></script>
-	<script src="assets/js/paypal.js"></script>
 </body>
 </html>
