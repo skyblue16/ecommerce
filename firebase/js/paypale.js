@@ -3,7 +3,7 @@ paypal.Button.render({
     env: 'sandbox', // production Or 'sandbox'
 
     client: {
-        sandbox:    'AY1QtzdFyi6YiSLpJFr9zIbVT9sXkc6QCEbpHEsiNjw_4H6yP-bpepmTp67jm-ktGyYyQZYk66jfxtX4',
+        sandbox:'AY1QtzdFyi6YiSLpJFr9zIbVT9sXkc6QCEbpHEsiNjw_4H6yP-bpepmTp67jm-ktGyYyQZYk66jfxtX4',
         production: 'AT4UP826uklOKEN54x4Q0SHukJklhDWNndFqpt6gRwGxpEEbiYB62pPdcE3npwUsFKd9aHrK5Gf4xV8M'
     },
 
@@ -14,7 +14,7 @@ paypal.Button.render({
             payment: {
                 transactions: [
                     {
-                        amount: { total: '35.00', currency: 'USD' }
+                        amount: { total: '1.00', currency: 'USD' }
                         
                     }
                 ]
