@@ -39,7 +39,7 @@
 							<div class="input-group-prepend">
 								<span id="searchIcon" class="input-group-text"><i class="fas fa-search"></i></span>
 							</div>
-							<input type="search" class="form-control" placeholder="Qué quieres comprar?" aria-label="What are you shopping for?" aria-describedby="basic-addon1">
+							<input type="search" id="searchText" class="form-control" placeholder="Qué quieres comprar?" aria-label="What are you shopping for?" aria-describedby="basic-addon1">
 							<div class="input-group-append">
 								<button id="searchBtn" class="btn btn-outline-secondary" type="submit">Buscar</button>
 							</div>
@@ -70,8 +70,34 @@
 		</div>
 	</header>
 	<main class="container-fluid">
-	<!--<div class="container">
-		<div class="row">
+	<div class="container">
+
+			<div class="col-sm-12">
+					<div class="row" id="divProductsList">
+							<div class="col-md-4">
+									<div class="card mb-5 box-shadow">
+											<img src="assets/img/camp.png" alt="Responsive image" class="img rounded">
+											<div class="card-body">
+													<p class="card-text">
+															Lorem ipsum dolor sit amet consectetur adipisicing elit.
+															 Vel iusto enim reiciendis minima fuga ullam, 
+															placeat quasi maiores illo odit sequi quos. Tempora, 
+															voluptate accusantium iste saepe illum autem pariatur!
+													</p>
+													<div class="d-flex justify-content-between aling-items-center">
+															<div class="btn-group">
+																	<button class="btn btn-sm btn-outline-secondary btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">view</button>
+																	
+															</div>
+													</div>   
+											</div>
+									</div>
+							</div>
+							
+						</div>
+			</div>
+
+	<!--	<div class="row">
 			<div class="col-xs-12">
 				<div class="main-content">
 					<div class="all-products page">
@@ -148,8 +174,8 @@
 		</div>
 		<div class="error page">
 			<h3>Sorry, something went wrong :(</h3>
-		</div>
-	</div> -->
+		</div>-->
+	</div> 
 	</main>
 	<footer>
 		<!-- Footer Nav -->
@@ -274,5 +300,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	 crossorigin="anonymous"></script>
 	<script src="assets/js/script.js"></script>
+	<script src="assets/js/ML-Search.js"></script>
 </body>
 </html>

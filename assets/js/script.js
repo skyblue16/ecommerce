@@ -83,16 +83,16 @@ $(function() {
   // These are called on page load
 
   // Get data about our products from products.json.
-  $.getJSON('products.json', function(data) {
-    // Write the data into our global variable.
-    products = data;
+  // $.getJSON('products.json', function(data) {
+  //   // Write the data into our global variable.
+  //   products = data;
 
-    // Call a function to create HTML for all the products.
-    generateAllProductsHTML(products);
+  //   // Call a function to create HTML for all the products.
+  //   generateAllProductsHTML(products);
 
-    // Manually trigger a hashchange to start the app.
-    $(window).trigger('hashchange');
-  });
+  //   // Manually trigger a hashchange to start the app.
+  //   $(window).trigger('hashchange');
+  // });
 
 
   // An event handler with calls the render function on every hashchange.
@@ -321,4 +321,13 @@ $(function() {
 
 $(document).ready(() => {
   $('.carousel').carousel();
+  $('#searchForm').submit(function(event) {
+    if ($('#searchText').val() == '') {
+      alert('Debe escribir un producto a buscar');
+    }else {
+      getMLProducts($('#searchText').val());
+      $('#searchText').val('');
+    }
+    event.preventDefault();
+  });
 });
