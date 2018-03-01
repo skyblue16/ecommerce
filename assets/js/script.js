@@ -1,6 +1,9 @@
 $(document).ready(() => {
   // Incializa componentes de Bootstrap:
   $('.carousel').carousel(); // --> Carousel
+  $('#titulo').click(function() {
+    console.log('hola');
+  })
 });
 
 // PAGE HOME
